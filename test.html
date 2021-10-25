@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>test</title>
+</head>
+<body>
+  <div class="informacoes">
+      <label class="numeracao"
+        >1º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >2º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >3º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >4º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >5º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >6º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >7º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >8º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >9º<input class="valor" type="text" required=""
+      /></label>
+      <label class="numeracao"
+        >10º<input class="valor" type="text" required=""
+      /></label>
+
+      <button id="button" type="submit">Clicar</button>
+
+      <div id="container"></div>
+    </div>
+    <script>
+      let buttonSubmit = document.getElementById("button");
+
+      buttonSubmit.addEventListener("click", function (event) {
+        event.preventDefault();
+        let valor = document.querySelectorAll(".valor");
+
+        let valores = [].map.call(valor, function (input) {
+          return input.value;
+        });
+
+        document.getElementById("container").innerHTML +=
+          "<br>" + valores + "<br />";
+        console.log(valores);
+      });
+   </script>
+
+    
+
+</body>
+</html>
+
+
+  <body>
+    
+  </body>
